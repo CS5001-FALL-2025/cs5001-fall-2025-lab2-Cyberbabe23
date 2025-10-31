@@ -16,6 +16,7 @@ print("=" * 50)
 print("MODULE 1 PRACTICE QUESTIONS")
 print("=" * 50)
 
+print("+" + "_" * 9 + "+")
 # =============================================================================
 # SECTION 1: VARIABLE ASSIGNMENT
 # =============================================================================
@@ -25,8 +26,12 @@ print("\n--- SECTION 1: Variable Assignment ---\n")
 # Question 1.1
 print("Question 1.1:")
 print("Create a variable called 'age' and assign it the value 25.")
+age = 25
 print("Then create a variable called 'city' and assign it the string 'Boston'.")
+city = "Boston"
 print("Print both variables.")
+print(age)
+print(city)
 print("Expected output: 25, Boston")
 print()
 
@@ -44,9 +49,12 @@ print("Assign them appropriate values and print each one on a separate line.")
 print()
 
 # Write your code here:
-
-
-
+first_name = "John"
+last_name = "Doe"
+student_id = 123456
+print(first_name)
+print(last_name)
+print(student_id)
 
 print("=" * 30)
 
@@ -58,8 +66,9 @@ print("Expected output: 68")
 print()
 
 # Write your code here:
-
-
+temperature = 72
+temperature = 68
+print(temperature)
 
 
 # =============================================================================
@@ -80,9 +89,14 @@ print("Expected output: 19, 11, 60, 3.75, 3")
 print()
 
 # Write your code here:
+num1 = 15
+num2 = 4
 
-
-
+print(num1 + num2)
+print(num1 - num2)
+print(num1 * num2)
+print(num1 / num2)
+print(num1 % num2)
 
 print("=" * 30)
 
@@ -94,9 +108,10 @@ print("Expected output: 96")
 print()
 
 # Write your code here:
-
-
-
+length = 12
+width = 8
+area = length * width
+print(area)
 
 print("=" * 30)
 
@@ -109,8 +124,13 @@ print()
 
 # Write your code here:
 
+initial_amount = 50
+item_cost = 12.99   
+items_bought = 3
 
-
+total_cost = item_cost * items_bought
+remaining_amount = initial_amount - total_cost
+print(remaining_amount)
 
 print("=" * 30)
 
@@ -122,9 +142,13 @@ print("Expected output: 88.0")
 print()
 
 # Write your code here:
-
-
-
+score1 = 85
+score2 = 92
+score3 = 78
+score4 = 96
+score5 = 89
+average = (score1 + score2 + score3 + score4 + score5) / 5
+print(average)
 
 # =============================================================================
 # SECTION 3: STRING CONCATENATION
@@ -140,9 +164,11 @@ print("Example output: John Q. Smith")
 print()
 
 # Write your code here:
-
-
-
+first_name = "John"
+middle_initial = "Q"
+last_name = "Smith"
+full_name = first_name + " " + middle_initial + ". " + last_name
+print(full_name)
 
 print("=" * 30)
 
@@ -155,7 +181,10 @@ print()
 
 # Write your code here:
 
-
+name = "Sarah"
+age = 20
+greeting = "Hello " + name + ", you are " + str(age) + " years old!"
+print(greeting)
 
 
 print("=" * 30)
@@ -168,9 +197,10 @@ print("Example: 'The book To Kill a Mockingbird was written by Harper Lee.'")
 print()
 
 # Write your code here:
-
-
-
+title = "To Kill a Mockingbird"
+author = "Harper Lee"
+print("The book " + title + " was written by " + author + ".")
+print(f"The book {title} was written by {author}.")
 
 # =============================================================================
 # SECTION 4: COMBINING CONCEPTS
@@ -189,6 +219,13 @@ print()
 
 # Write your code here:
 
+num1 = 24
+num2 = 6 
+print(f"{num1} + {num2} = {num1 + num2}")
+print(f"{num1} - {num2} = {num1 - num2}")
+print(f"{num1} * {num2} = {num1 * num2}")  
+print(f"{num1} / {num2} = {num1 / num2}")
+
 
 
 
@@ -205,9 +242,12 @@ print("Expected: Tip: $8.19, Total: $53.69")
 print()
 
 # Write your code here:
+bill_amount = 45.50
+tip_percentage = 0.18
+tip_amount = bill_amount * tip_percentage
+total_bill = bill_amount + tip_amount
 
-
-
+print(f"Tip: ${tip_amount:.2f}, Total: ${total_bill:.2f}")
 
 print("=" * 30)
 
@@ -224,6 +264,12 @@ print()
 # Write your code here:
 
 
+student_name = "Alex Johnson"
+score1 = 87         
+score2 = 92
+score3 = 85
+average_score = (score1 + score2 + score3) / 3
+print(f"Student: {student_name} | Scores: {score1}, {score2}, {score3} | Average: {average_score:.1f}")
 
 
 print("=" * 30)
@@ -241,7 +287,24 @@ print()
 # Write your code here:
 
 
+item1 = "Apples"
+price1 = 3.99
+item2 = "Bread"
+price2 = 2.50
+item3 = "Milk"
+price3 = 4.25
 
+subtotal = price1 + price2 + price3
+tax = subtotal * 0.085
+total = subtotal + tax
+
+print("Receipt:")
+print(f"{item1}: ${price1:.2f}")
+print(f"{item2}: ${price2:.2f}")
+print(f"{item3}: ${price3:.2f}")
+print(f"Subtotal: ${subtotal:.2f}")
+print(f"Tax: ${tax:.2f}")
+print(f"Total: ${total:.2f}")   
 
 # =============================================================================
 # SECTION 5: CHALLENGE QUESTIONS - NOT GRADED (OPTIONAL)
@@ -259,6 +322,9 @@ print("Expected: 75°F is equal to 23.89°C")
 print()
 
 # Write your code here:
+fahrenheit = 75
+celsius = (fahrenheit - 32) * 5 / 9
+print(f"{fahrenheit}°F is equal to {celsius:.2f}°C")
 
 
 
@@ -276,8 +342,12 @@ print()
 
 # Write your code here:
 
+total_seconds = 3847
+hours = total_seconds // 3600
+minutes = (total_seconds % 3600) // 60
+seconds = total_seconds % 60
 
-
+print(f"{hours} hours, {minutes} minutes, {seconds} seconds")           
 
 print("=" * 30)
 
