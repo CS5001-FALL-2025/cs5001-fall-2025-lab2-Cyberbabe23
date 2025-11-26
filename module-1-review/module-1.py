@@ -9,8 +9,10 @@ print(name)    # Output: Alice
 
 
 # Challenge: Create a variable with a value and print it.
-
-
+a = 56
+print(a)  # Output: 56
+b = "Hello, World!"
+print(b)  # Output: Hello, World!
 
 
 # Arithmetic Operations
@@ -134,9 +136,12 @@ print("Course code:", course_code)
 # class = "CS5001"     # 'class' is a reserved word
 
 # Challenge: Create 3 variables with descriptive names for a student record.
+# Print their values.   
+student_id = 12345
+student_major = "Computer Science"
 
-
-
+print("Student ID:", student_id)
+print("Student Major:", student_major)
 
 # More Arithmetic Operations
 print("\n--- ADDITIONAL ARITHMETIC OPERATIONS ---")
@@ -163,9 +168,10 @@ calculation_with_parens = (2 + 3) * (4 ** 2 - 1)
 print("(2 + 3) * (4 ** 2 - 1) =", calculation_with_parens)  # = 5 * 15 = 75
 
 # Challenge: Calculate the area of a triangle: (base * height) / 2
-
-
-
+base = 5
+height = 10
+area = (base * height) / 2
+print("Area of the triangle:", area)    
 
 # Modern String Formatting with f-strings
 print("\n--- F-STRING FORMATTING (MODERN APPROACH) ---")

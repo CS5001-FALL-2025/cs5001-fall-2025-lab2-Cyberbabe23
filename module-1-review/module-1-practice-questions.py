@@ -361,7 +361,13 @@ print()
 
 # Write your code here:
 
+adjective = "funny"
+noun = "dog"
+verb = "jumps"
+place = "park"
+number = 5
 
+print(f"The {adjective} {noun} {verb} over {number} lazy cats in the {place}.")
 
 
 print("\n" + "=" * 50)
